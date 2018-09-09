@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/actionHome">
+
+    <fragment
+        android:id="@+id/actionHome"
+        android:name="com.jagath.mynavigationarch_02.Home"
+        android:label="@string/home_fragment"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/actionDashboard"
+        android:name="com.jagath.mynavigationarch_02.Dashboard"
+        android:label="@string/dashboard_fragment"
+        tools:layout="@layout/fragment_dashboard" />
+    <fragment
+        android:id="@+id/actionNotifications"
+        android:name="com.jagath.mynavigationarch_02.Notifications"
+        android:label="@string/notifications_fragment"
+        tools:layout="@layout/fragment_notifications" >
+        <action
+            android:id="@+id/action_actionNotifications_to_notificationDetails"
+            app:destination="@id/notificationDetails"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@+id/actionNotifications" />
+    </fragment>
+    <fragment
+        android:id="@+id/notificationDetails"
+        android:name="com.jagath.mynavigationarch_02.notificationDetails"
+        android:label="@string/notification_details_fragment"
+        tools:layout="@layout/fragment_notification_details" >
+        <argument
+            android:name="args_from_notification"
+            app:argType="integer"
+            android:defaultValue="1" />
+    </fragment>
+</navigation>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">MyNavigationArch-02</string>
+    <string name="action_settings">Settings</string>
+    <string name="titleHome">Home</string>
+    <string name="titleDashboard">Dash</string>
+    <string name="titleNotifications">Notifications</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="home_fragment">Home</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="dashboard_fragment">Dashboard</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="notifications_fragment">Notifications</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="notification_details_fragment">Notification Details</string>
+</resources>
